@@ -4,17 +4,17 @@ Here are the steps to publish to Heroku. This assumes you made it through instal
 
 1) Create a file in your main portfolio folder named Gemfile (remember capitalization matters). The Gemfile should have two lines, plus lines for any gems you have installed (like twitter, instagram, google search, etc.):
 
-source 'https://rubygems.org'
+source 'https://rubygems.org'  
 gem 'sinatra'
 
-gem 'twitter'
+gem 'twitter'  
 gem 'instagram'
 
 2) On the command line, run ‘'undle install'. (FYI, the Gemfile tells heroku that you want a Sinatra app and what other gems you want installed. bundle install makes sure that you have the gems installed and creates a Gemfile.lock file that heroku will look for when it starts your application.)
 
 3) Create a new file in your main portfolio folder named config.ru . It only has two lines (this assumes you put your routes in main.rb):
 
-require './main'
+require './main'  
 run Sinatra::Application
 
 4) On the command line, type 'git add -A' to add any new files.
